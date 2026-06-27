@@ -1,16 +1,16 @@
 
 'use strict';
 /* ============================================================
-   HOTEL RAMADA — Complete CMS Engine v3
+   HOTEL VERO — Complete CMS Engine v3
    localStorage persistence · Full admin dashboard · Booking popup
    ============================================================ */
 
 /* ══ DEFAULT DATA ══ */
 const DEFAULT_DATA = {
-  hotelName:'Hotel Ramada', hotelInitials:'HR',
-  siteTitle:'Hotel Ramada — Luxury 4-Star Hotel',
+  hotelName:'Hotel VERO', hotelInitials:'HR',
+  siteTitle:'Hotel VERO — Luxury 4-Star Hotel',
   footerTagline:'A sanctuary of refined luxury and warm hospitality, where every guest becomes a cherished part of our story.',
-  footerCopy:'© 2025 Hotel Ramada. All rights reserved.',
+  footerCopy:'© 2025 Hotel VERO. All rights reserved.',
   footerAddress:'12 Grand Blvd, City Center, Erbil',
   footerQlHeading:'Quick Links', footerSvHeading:'Services',
   whatsappNum:'9647500000000',
@@ -25,7 +25,7 @@ const DEFAULT_DATA = {
   heroImg:'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&q=80',
   heroBadge:'4-Star Luxury Hotel',
   heroTitle:'Where Elegance|Meets Comfort',
-  heroSub:'Experience a world of refined luxury, unparalleled service, and timeless hospitality at Hotel Ramada.',
+  heroSub:'Experience a world of refined luxury, unparalleled service, and timeless hospitality at Hotel VERO.',
   heroBtn1:'Book Your Stay', heroBtn2:'Explore Rooms',
   statRooms:250, statRoomsLabel:'Rooms',
   statYears:15, statYearsLabel:'Years of Excellence',
@@ -36,13 +36,13 @@ const DEFAULT_DATA = {
   aboutImgSecondary:'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&q=80',
   aboutEyebrow:'Our Story', aboutEstYear:'2009',
   aboutTitle:'A Legacy of|Refined Hospitality',
-  aboutPara1:'Since 2009, Hotel Ramada has stood as a beacon of luxury and warmth in the heart of the city. We believe that true hospitality is more than comfortable rooms — it is the art of making every guest feel genuinely at home, surrounded by elegance and cared for in every detail.',
+  aboutPara1:'Since 2009, Hotel VERO has stood as a beacon of luxury and warmth in the heart of the city. We believe that true hospitality is more than comfortable rooms — it is the art of making every guest feel genuinely at home, surrounded by elegance and cared for in every detail.',
   aboutPara2:'Our team of dedicated professionals works tirelessly to ensure that each stay becomes a cherished memory. From the crisp white linens to the handcrafted cuisine, we pour passion into every corner of your experience.',
   pillar1:'Safety First', pillar2:'Immaculate Cleanliness',
   pillar3:'Warm Service', pillar4:'Premium Comfort',
   aboutCTA:'Discover Our Rooms',
 
-  whyEyebrow:'Why Hotel Ramada',
+  whyEyebrow:'Why Hotel VERO',
   whyTitle:'Crafted for the|Discerning Traveler',
   whyCards:[
     {icon:'fas fa-bed',title:'Luxury Rooms',text:'Every room is a sanctuary of comfort, designed with premium materials and attention to every detail.'},
@@ -100,7 +100,7 @@ const DEFAULT_DATA = {
     {icon:'fas fa-moon',title:'24/7 Reception',desc:'Our front desk team is always on hand to assist with any request.',active:true},
   ],
 
-  galleryEyebrow:'Visual Tour', galleryTitle:'A Glimpse of|Hotel Ramada',
+  galleryEyebrow:'Visual Tour', galleryTitle:'A Glimpse of|Hotel VERO',
   gallery:[
     {img:'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&q=85',caption:'Hotel Exterior'},
     {img:'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=700&q=80',caption:'Grand Lobby'},
@@ -116,9 +116,9 @@ const DEFAULT_DATA = {
   reviewsEyebrow:'Guest Voices', reviewsTitle:'What Our|Guests Say',
   reviews:[
     {img:'https://randomuser.me/api/portraits/women/44.jpg',name:'Sarah Mitchell',country:'United Kingdom',rating:5,text:'"The Presidential Suite was an absolute dream. Every detail was meticulously arranged. The staff remembered my name from the moment I checked in — that personal touch is rare and deeply appreciated."'},
-    {img:'https://randomuser.me/api/portraits/men/32.jpg',name:'Ahmed Al-Rashid',country:'United Arab Emirates',rating:5,text:'"We chose Hotel Ramada for our anniversary and couldn\'t have made a better decision. The room was exquisite, the restaurant\'s food was exceptional, and the ambiance throughout was magical."'},
+    {img:'https://randomuser.me/api/portraits/men/32.jpg',name:'Ahmed Al-Rashid',country:'United Arab Emirates',rating:5,text:'"We chose Hotel VERO for our anniversary and couldn\'t have made a better decision. The room was exquisite, the restaurant\'s food was exceptional, and the ambiance throughout was magical."'},
     {img:'https://randomuser.me/api/portraits/women/68.jpg',name:'Julia Hoffmann',country:'Germany',rating:5,text:'"Traveling for business is rarely this enjoyable. The Executive Suite\'s workspace was perfectly designed, the Wi-Fi was genuinely fast, and the breakfast buffet set me up beautifully each morning."'},
-    {img:'https://randomuser.me/api/portraits/men/54.jpg',name:'Carlos Reyes',country:'Spain',rating:4,text:'"The Family Room was spacious and comfortable for our family of four. The kids loved the pool and the daily activities. We will definitely return — Hotel Ramada is now our family\'s go-to destination."'},
+    {img:'https://randomuser.me/api/portraits/men/54.jpg',name:'Carlos Reyes',country:'Spain',rating:4,text:'"The Family Room was spacious and comfortable for our family of four. The kids loved the pool and the daily activities. We will definitely return — Hotel VERO is now our family\'s go-to destination."'},
     {img:'https://randomuser.me/api/portraits/women/22.jpg',name:'Yuki Tanaka',country:'Japan',rating:5,text:'"From the moment we arrived, the concierge team made us feel like royalty. The hotel\'s design is stunning, and the restaurant deserves its own five-star review. Absolutely flawless experience."'},
   ],
 
@@ -128,13 +128,13 @@ const DEFAULT_DATA = {
     {q:'Is breakfast included with every room?',a:'Yes! A full buffet breakfast is included complimentarily with all room types, served from 6:30 AM to 10:30 AM in our main restaurant.'},
     {q:'Do you offer airport transportation?',a:'We offer complimentary airport transfers for guests upon request. Please notify us of your arrival details at least 24 hours in advance.'},
     {q:'Is there parking available at the hotel?',a:'Yes, we offer secure covered valet parking for all hotel guests. The parking fee is $15/night and is charged separately.'},
-    {q:'Are pets allowed at Hotel Ramada?',a:'We welcome small pets (under 10 kg) in designated pet-friendly rooms. A refundable deposit of $50 is required at check-in.'},
+    {q:'Are pets allowed at Hotel VERO?',a:'We welcome small pets (under 10 kg) in designated pet-friendly rooms. A refundable deposit of $50 is required at check-in.'},
     {q:'What is your cancellation policy?',a:'Reservations may be cancelled free of charge up to 48 hours before arrival. Cancellations within 48 hours incur a one-night fee.'},
   ],
 
   contactEyebrow:'Get In Touch', contactTitle:'We\'d Love to|Hear From You',
   contactPhone:'+964 750 000 0000', contactWa:'+964 750 000 0000',
-  contactEmail:'info@hotelramada.com',
+  contactEmail:'info@hotelvero.com',
   contactAddress:'12 Grand Boulevard, City Center, Erbil, Iraq',
   contactHours:'Front Desk: 24/7 · Reservations: 8AM–10PM',
 
@@ -172,7 +172,7 @@ const DEFAULT_DATA = {
 
 /* ══ DATA STORE ══ */
 let D = {};
-const STORAGE_KEY = 'hotelRamadaCMS_v3';
+const STORAGE_KEY = 'hotelVEROCMS_v3';
 
 function loadData() {
   try {
@@ -240,7 +240,7 @@ function renderSite() {
 }
 
 function applyIdentity() {
-  document.title = D.siteTitle || 'Hotel Ramada';
+  document.title = D.siteTitle || 'Hotel VERO';
   setText('site-initials', D.hotelInitials);
   setText('site-name-loader', D.hotelName);
   setText('nav-initials', D.hotelInitials);
@@ -874,13 +874,13 @@ function handleAdminLogin(e) {
   const email=document.getElementById('admin-email').value;
   const pass=document.getElementById('admin-pass').value;
   const err=document.getElementById('admin-error');
-  if(email==='admin@hotelramada.com' && pass==='admin123') {
+  if(email==='admin@hotelvero.com' && pass==='admin123') {
     closeAdminLogin();
     document.getElementById('cms-dashboard').classList.add('open');
     document.body.style.overflow='hidden';
     buildCMSDashboard();
   } else {
-    err.textContent='Invalid credentials. Use admin@hotelramada.com / admin123';
+    err.textContent='Invalid credentials. Use admin@hotelvero.com / admin123';
   }
 }
 function adminLogout() {
@@ -1469,5 +1469,5 @@ renderSite();
 reobserve();
 document.querySelectorAll('.stat-num[data-target]').forEach(el=>ctrObs.observe(el));
 
-console.log('%cHotel Ramada CMS v3 — Ready ✦', 'color:#c9a96e;font-family:serif;font-size:14px;');
+console.log('%cHotel VERO CMS v3 — Ready ✦', 'color:#c9a96e;font-family:serif;font-size:14px;');
 
