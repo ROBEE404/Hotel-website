@@ -7,7 +7,7 @@
 
 /* ══ DEFAULT DATA ══ */
 const DEFAULT_DATA = {
-  hotelName:'Hotel VERO', hotelInitials:'HR',
+  hotelName:'Hotel VERO', hotelInitials:'HV',
   siteTitle:'Hotel VERO — Luxury 4-Star Hotel',
   footerTagline:'A sanctuary of refined luxury and warm hospitality, where every guest becomes a cherished part of our story.',
   footerCopy:'© 2025 Hotel VERO. All rights reserved.',
