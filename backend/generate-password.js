@@ -2,7 +2,7 @@
 const bcrypt = require('bcryptjs');
 
 async function generateHash() {
-  const password = process.argv[2];  // reads the password from the command line
+  const password = process.argv[2];  
 
   if (!password) {
     console.log('');
@@ -17,8 +17,7 @@ async function generateHash() {
   console.log('');
   console.log('  Generating secure hash...');
 
-  // saltRounds: 12 means bcrypt will do 2^12 = 4096 iterations
-  // This makes brute-force attacks extremely slow
+
   const saltRounds = 12;
   const hash = await bcrypt.hash(password, saltRounds);
 
