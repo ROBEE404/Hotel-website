@@ -1,6 +1,3 @@
-# ================================================================
-#  .gitignore — Files that will NEVER be uploaded to GitHub
-# ================================================================
 
 # Environment variables — contains your passwords and secrets!
 .env
